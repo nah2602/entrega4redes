@@ -4,7 +4,7 @@ Professora: Edilayne Meneses Salgueiro
 
 ### Clonar Git e entrar na pasta
 ```
-git clone https://github.com/
+git clone https://github.com/nah2602/entrega4redes/
 ```
 
 ```
@@ -13,13 +13,16 @@ cd
 
 ### Build do docker:
 ```
-docker build -t  .
+docker build -t  streamingradio .
 ```
 ### Executar servidor Docker:
 ```
-docker run -d 
+docker run -d streamingradio
 ```
-
+###  Criação do  container
+```
+docker run -d -p 12005:12000 -it --rm --name streamingradioc streamingradio
+```
 ### Descobrir o Container ID 
 ```
 docker ps
@@ -27,10 +30,10 @@ docker ps
 
 ### Testar o cliente
 ```
-docker exec ID python TCPClient.py
+docker exec b64472260fd9 python TCPClient.py
 ```
 
 ### Verificar informações de container
 ```
-docker exec -i -t ID /bin/bash
+docker exec -i -t b64472260fd9 /bin/bash
 ```
