@@ -8,7 +8,7 @@ git clone https://github.com/nah2602/entrega4redes/
 ```
 
 ```
-cd 
+cd entrega4redes
 ```
 
 ### Build do docker:
